@@ -1,0 +1,685 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    border: 3px solid red;
+    max-width: 100%;
+}
+.first-span{
+    background-color: bisque;
+}
+header,
+#contact,
+#testimonial,
+#services,
+#achievements,
+#features,
+#home,
+#clients
+{
+    width: 100%;
+    z-index: -1;
+    /* border: 2px solid red; */
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 5px silver;
+    height: auto;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    background-color:white;
+    z-index: 1;
+}
+.logo{
+    flex-basis: 30%;
+}
+.bar{
+    flex-basis: 10%;
+    position: relative;
+}
+.logo{
+    font-size: 1rem;
+    color: blue;
+    padding: 2%;
+}
+nav{
+    flex-basis: 60%;
+}
+nav>ul>li{
+    display: inline-block;
+    padding: 3%;
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+.bar img {
+width: 30%;
+margin-top: 10%;
+}
+.head-img img{
+    width: 60%;
+}
+.head{
+    padding: 5%;
+}
+.head h2{
+    font-size: 2rem;
+    padding: 3%;
+    color: white;
+}
+.head p {
+    font-size: 2rem;
+    padding: 2%;
+    color: white;
+}
+.side-nav{
+    position: absolute;
+    
+    right: -200%;
+    width: 50%;
+    bottom: -15%;
+    height: 100%;
+    background:linear-gradient(to left,  blue, rgb(167, 34, 212));
+    transform: translateY(-100px);
+    transition: all 1s  .3S ease-in-out;
+}
+.input{
+    display: none;
+
+}
+    
+
+#hamburger:checked ~ .side-nav{
+   border-radius: 10px;
+   transform: translateY(0);
+   right: -100px;
+}
+/* HOME SECTION  */
+.home-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+.home-header h3{
+    color: orange;
+    padding: 5%;
+    font-size: 2em;
+
+
+}
+.home-header h4{
+    font-size: 3rem;
+    padding: 1%;
+    font-weight: bolder;
+}
+.home-header p {
+    font-size: 1.3rem;
+    padding: 2%;
+}
+.span{
+    font-weight: bolder;
+    color: blue;
+}
+.home-img img{
+    width: 50%;
+}
+.back-to-top{
+    position: sticky;
+    top:100px;
+    border:2px solid green;
+    width: 40px;
+    background-color: red;
+    padding: 1%;
+    border-radius: 30%;
+    transform: rotate(270deg);
+    left:90%;
+}
+.back-to-top img{
+    width: 20px;
+}
+/* HOME SECTION ENDS  */
+
+
+/* SERVICES STARTS */
+.services-container{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ 
+}
+.services-text{
+    padding: 7%;
+}
+.services-span{
+    background-color: bisque;
+}
+.services-header h3 {
+    font-size: 1.4rem;
+    color: orange;
+    padding: 3%;
+}
+.services-header h2 {
+    font-weight: bolder;
+    padding: 2%;
+    font-size: 2em;
+}
+.services-header p{
+    color: blue;
+    padding: 5%;
+    font-size: x-large;
+}
+.services-list>ul>li{
+    list-style: none;
+    padding: 2%;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.services-list p {
+    font-size: 1.4rem;
+    padding: 3%;
+}
+.services-img{
+    padding: 7%;
+}
+.services-img img{
+    width: 80%;
+}
+
+
+/* SERVICES ENDS  */
+
+/* FEATURES STARTS */
+.features-container{
+    width: 100%;
+    /* text-align: right; */
+    padding: 10%;
+    margin: 5%;
+}
+
+.features-header h3 {
+    font-size: 1.4rem;
+    color: orange;
+    padding: 3%;
+}
+.features-header h2 {
+    font-weight: bolder;
+    padding: 2%;
+    font-size: 2em;
+}
+.features-header p{
+    color: blue;
+    padding: 5%;
+    font-size: 1.2rem;
+}
+.features{
+    width: 50%;
+    /* margin-left: 65%; */
+   /* text-align:right; */
+}
+div.main-line{
+    width: 100%;
+    background-color: aliceblue;
+    border: 3px solid aliceblue;
+    border-radius: 10px;
+}
+div.second-line{
+    width: 85%;
+    background-color: blue;
+    border: 3px solid blue;
+}
+
+div.second-line-2{
+    width: 90%;
+    background-color: blue;
+    border: 3px solid blue;
+}
+
+div.second-line-3{
+    width: 60%;
+    background-color: blue;
+    border: 3px solid blue;
+}
+
+div.second-line-4{
+    width: 80%;
+    background-color: blue;
+    border: 3px solid blue;
+}
+
+
+/* FEATURES ENDS */
+/* ACHIEVEMENTS STARTS  */
+#achievements{
+    background-color: aliceblue;
+    width: 100%;
+}
+.achievements-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 5%;
+    width: 90%;
+}
+.achievements{
+  
+    padding: 2%;
+}
+.achievements-header h3 {
+    font-size: 1.4rem;
+    color: orange;
+    padding: 5%;
+}
+.achievements-header{
+    margin-bottom:50px;
+}
+.achievements-header h2 {
+    font-weight: bolder;
+    padding: 1%;
+    font-size: 2em;
+}
+.achievements-header p{
+    color: blue;
+    padding:1%;
+    font-size: 1.2rem;
+   
+}
+.grid{
+    margin: 2%;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    gap: 3px;
+    width: 100%;
+}
+.achievments-img img {
+    width: 70px;
+}
+.achievments-img-2 img {
+    width: 70px;
+    visibility: hidden;
+}
+
+.achievments-img{
+    grid-column: span 3;
+}
+.achievements-text{
+    grid-column: span 9;
+} .achievements-text h1{
+    font-size: 1rem;
+}
+.achievements-text p{
+    font-size: .8rem;
+}
+
+.first-div{
+    border: 2px solid aliceblue;
+    width: 30%;
+    padding: 3%;
+    background-color: white;border-radius:30px;
+}
+
+.second-div{
+    border: 2px solid aliceblue;
+    width: 30%;
+    padding: 3%;
+    background-color: white;border-radius:30px;
+    margin-left:20%;
+}
+.third-div{
+    border: 2px solid aliceblue;
+    width: 30%;
+    margin-left: 60%;
+    padding: 3%;
+    background-color: white;border-radius:30px;
+}
+
+.fourth-div{
+    border: 2px solid aliceblue;
+    width: 30%;
+    margin-left: 60%;
+    padding: 3%;
+    background-color: white;border-radius:30px;
+}
+
+.fifth-div{
+    border: 2px solid aliceblue;
+    width: 30%;
+    margin-left: 20%;
+    padding: 3%;
+    background-color: white;border-radius:30px;
+}
+
+.sixth-div{
+    border: 2px solid aliceblue;
+    width: 30%;
+    padding: 3%;
+    background-color: white;border-radius:30px;
+}
+.second-achievement{
+    margin: 20%;
+}
+/* ACHIEVEMENTS ENDS  */
+
+/* TESTIMONIAL STARTS */
+.testimonial-container{
+    margin: 7%;
+    width: 40%;
+    margin-left: 55%;
+}
+
+.testimonial-header h3 {
+    font-size: 1.4rem;
+    color: orange;
+    padding: 5%;
+}
+.testimonial-header{
+    margin-bottom:50px;
+}
+.testimonial-header h2 {
+    font-weight: bolder;
+    padding: 1%;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.testimonial-header p{
+    color: blue;
+    padding:2%;
+    font-size: 1.2rem;
+   
+}
+.coma{
+    color: orange;
+    padding: 1%;
+    font-size: 2rem;
+}
+.user-img img{
+    width: 70px;
+    border-radius: 50%;
+
+}
+.user-img{
+    padding: 4%;
+}
+.user-profile{
+    
+    padding: 8% 2% 5%;
+}
+.user-profile p{
+color: blue;
+/* padding: 2%; */
+}
+.user{
+    display: flex;
+    padding: 10px;
+}
+/* TESTIMONIAL ENDS */
+
+/* CLIENTS START */
+#clients{
+    background-color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+.clients-container{
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+}
+
+
+.clients-header h3 {
+    font-size: 1.4rem;
+    color: orange;
+    padding: 3%;
+}
+.clients-header h2 {
+    font-weight: bolder;
+    padding: 2%;
+    font-size: 2em;
+}
+.clients-header p{
+    color: blue;
+    padding: 5%;
+    font-size: 1.2rem;
+}
+.clients-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width:100%;
+    gap: 30px;
+    padding: 3%;
+}
+.number{
+    grid-column: span 3;
+    color: aqua;
+    font-size: 2rem;
+    padding: 3%;
+}
+
+.clients-text{
+    grid-column: span 9;
+}
+.clients-text p {
+    font-size: 1.3rem;
+    padding-left: 2%;
+     
+}
+.clients-sponsors{
+    padding: 1%;
+    margin-top: 20%;
+}
+.clients-sponsors img{
+width: 250px;
+border-radius: 20px;
+padding: 10px;
+height:auto;
+}
+.clients-main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+/* CLIENTS END */
+/* CONTACTS STARTS */
+.contact-container{
+    width: 85%;
+    text-align: center;
+}
+.contact-header h3 {
+    font-size: 1.4rem;
+    color: orange;
+    padding: 2%;
+}
+.contact-header h2 {
+    font-weight: bolder;
+     font-size: 2em;
+}
+.contact-header p{
+    color: blue;
+    padding: 2%;
+    font-size: 1.2rem;
+}
+.contact-container{
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+.my-text{
+    width: inherit;
+}
+.my-text p{
+    font-size: 1.5rem;
+    color: blue;
+}
+.my-number{
+    font-size: 1.5rem;
+    
+}
+.my-number a {
+    text-decoration: none;
+
+}
+.info-1, 
+.info-2{
+    text-align: left;
+    margin: 4%;
+    width: 90%;
+}
+
+.input-name{
+    width: 40%;
+    padding: 4%;
+    height: 4%;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-size: 1.5rem;
+}
+.input-email{
+    width: 40%;
+    padding: 4%;
+    height: 4%;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.input-subject{
+    width: 90%;
+    padding: 4%;
+    height: 4%;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-size: 1.5rem;
+    margin-top: 2%;
+  
+}
+.input-message{
+    width: 90%;
+    padding: 4%;
+    height: 40%;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+.button{
+    text-align: right;
+    margin-right: 10%;
+}
+.button button{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 3%;
+}
+/* CONTACTS ENDS */
+
+@media  only screen and (max-width:991px){
+    .logo>a>h1{
+        font-size: 2rem;
+    }
+    nav ul {
+        top:0;
+        position: fixed;
+        background:white;
+        left:-100%;
+        width: auto;
+        height: 50%;
+        opacity:1;
+        border-radius: 10px;
+       
+     
+        transition: all 1s ease-in-out;
+    }
+    
+    nav>ul>li{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 40px;
+    }
+    
+    .hamburger-icon img{
+        display: block;
+    }
+    #hamburger:checked ~ ul{
+        left: 0;
+        
+    }
+    .side-nav{
+        display: none;
+    }
+    /* TESTIMONIAL STARTS */
+.testimonial-container{
+    margin: 7%;
+    width: 80%;
+    text-align: center;
+}
+.achievements-container{
+    width: auto;
+}
+
+.second-achievement{
+    /* display: none; */
+}
+.features-container{
+    text-align: center;
+    padding: 0 auto;
+}
+
+.features{
+    width: 80%;
+   
+    text-align: center;
+}
+.clients-sponsors img{
+    width: 200px;
+}
+.clients-sponsors {
+    text-align: center;
+}
+.clients-grid{
+    text-align: center;
+}
+#clients{
+    text-align: center;
+}
+.clients-container{
+    text-align: center;
+}
+.clients-header{
+    text-align: center;
+    margin-left: 2%;
+}
+.number a {
+    font-size: 1.3rem;
+}
+.contact-header{
+    width: 90%;
+}
+.contact-info{
+    width: 90%;
+}
+.info-1{
+    width: 90%;
+}
+.my-text{
+    text-align: center;
+}
+.contact-container{
+    text-align: center;
+}
+}
